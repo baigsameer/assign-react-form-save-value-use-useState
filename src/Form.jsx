@@ -12,9 +12,7 @@ const [YourSubject,setYourSubject]=useState("");
 const [YourMessage,setYourMessage]=useState(""); 
 
 function submitFormFunc(){
-    setStudentArray(...studentArray,[
-
-
+    setStudentArray([...studentArray,
 {
     YourName,
    YourSurname,
@@ -23,10 +21,7 @@ function submitFormFunc(){
    YourMessage
 
 }
-
-
-
-    ]);
+]);
 
   
 }
@@ -82,7 +77,7 @@ useEffect(()=>{
             <div className="col-12">
               <div className="row justify-content-center">
                 <div className="col-md-6 ">
-                  <button onClick={submitFormFunc}    data-res="<?php echo $sum; ?>" type="submit" className="btn btn-dark w-100 fw-bold" >Send</button>
+                  <button onClick={submitFormFunc} data-res="<?php echo $sum; ?>" type="submit" className="btn btn-dark w-100 fw-bold" >Send</button>
                 </div>
               </div>
             </div>
