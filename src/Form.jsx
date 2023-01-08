@@ -12,7 +12,7 @@ const [YourSubject,setYourSubject]=useState("");
 const [YourMessage,setYourMessage]=useState(""); 
 
 function submitFormFunc(){
-    setStudentArray([
+    setStudentArray(...studentArray,[
 
 
 {
